@@ -1,6 +1,7 @@
 {
     "site_config": {
         "host" : "0.0.0.0",
+        "port" : 5000,
         "debug": false
     },
     "openai_key": "sk-...",
