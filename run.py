@@ -25,7 +25,7 @@ if __name__ == '__main__':
             methods=backend_api.routes[route]['methods'],
         )
 
-    host = site_config.get('host', '0.0.0.0')
+    host = '0.0.0.0'
     port = int(os.getenv("PORT", site_config.get('port', 5000)))
     debug = site_config.get('debug', False)
 
