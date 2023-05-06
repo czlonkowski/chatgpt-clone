@@ -16,7 +16,6 @@ class Backend_Api:
         self.app = app
         self.openai_key = os.getenv("OPENAI_API_KEY") or config['openai_key']
         self.openai_api_base = os.getenv("OPENAI_API_BASE") or config['openai_api_base']
-        self.proxy = config['proxy']
         self.routes = {
             '/backend-api/v2/conversation': {
                 'function': self._conversation,
