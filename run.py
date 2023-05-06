@@ -27,6 +27,8 @@ if __name__ == '__main__':
 
     host = '0.0.0.0'
     port = int(os.getenv("PORT", site_config.get('port', 5000)))
+    if site_config.get('port') == "$PORT":
+        port = int(os.getenv("PORT", 5000))
     debug = site_config.get('debug', False)
 
     print(f"Running on {host}:{port}")
